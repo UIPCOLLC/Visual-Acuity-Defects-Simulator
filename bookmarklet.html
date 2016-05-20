@@ -1,0 +1,32 @@
+<!doctype html />
+<html>
+<head>
+
+</head>
+<body>
+<h1>Accessibility Tools</h1>	
+<h2>Visual Acuity Defects Simulator</h2>
+<p>In Firefox, right click and select "Bookmark This Link."</p>
+<!-- 
+	To modify this link for your local site, or your online site, replace the 'a11y_mousefollow.js' text entry in both the visible text and the link href with the full path (it will really only work if it is a fully qualified path, as this script tag will be injected into pages that will not share the relative pathing link) 
+	So, if your domain was www.example.com, and the .js file was under your "scripts" directory, your path for this would be "https://www.example.com/scripts/a11y_mousefollow.js" and your link would look like: 
+
+	<a href="javascript:(function(){var jsAddition=document.createElement('script');jsAddition.setAttribute('src','https://www.example.com/scripts/a11y_mousefollow.js');document.body.appendChild(jsAddition);}());">Visual Acuity Defect Simulator bookmarklet</a>
+
+-->
+<p><a href="javascript:(function(){var jsAddition=document.createElement('script');jsAddition.setAttribute('src','a11y_mousefollow.js');document.body.appendChild(jsAddition);}());">Visual Acuity Defect Simulator bookmarklet</a></p>
+<p>If you can't get it saved as a bookmark (using the keyboard), copy and paste the following code into a new bookmark's URL: <p>
+	<textarea rows='2' cols='140'>javascript:(function(){var jsAddition=document.createElement('script');jsAddition.setAttribute('src','a11y_mousefollow.js');document.body.appendChild(jsAddition);}());</textarea>
+<p>Click it to test it on this page. Currently, reload the page to reset.</p>
+
+<h2>SVG content</h2>
+<p>If your browser cannot see three colored circles below, it is likely it cannot use the bookmarklet.</p>
+<svg>
+  <circle cx="40" cy="40" r="40" fill="red"/>
+  <circle cx="80" cy="40" r="40" fill="green"/>
+  <circle cx="60" cy="60" r="40" fill="blue"/>
+</svg>
+
+</body>
+</html>
+
